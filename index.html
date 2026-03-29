@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Bmb Tech | Cybersecurity Portfolio</title>
+<meta name="description" content="Bmb Tech — CS Student at Arusha University. Network Security, Privacy, Ethical Hacking."/>
+<meta property="og:title" content="Bmb Tech | Cybersecurity Portfolio"/>
+<meta property="og:image" content="https://avatars.githubusercontent.com/Bd-Mutant7"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div id="prog"></div>
+<canvas id="mx"></canvas>
+
+<nav>
+  <a href="#hero" class="logo">BMB<span>.</span>TECH</a>
+  <ul class="nav-links">
+    <li><a href="#profile">Profile</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certs">Certs</a></li>
+    <li><a href="#stats">Stats</a></li>
+    <li><a href="#globe">Globe</a></li>
+    <li><a href="#demo">Lab</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-r">
+    <div class="online"><div class="dot"></div>ONLINE</div>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="hero-wrap">
+    <div class="term-box">
+      <div class="term-bar">
+        <div class="td td1"></div><div class="td td2"></div><div class="td td3"></div>
+        <span class="term-title">Bmb@Tech:~$ — bash v5.2</span>
+      </div>
+      <div id="term-out"></div>
+      <div class="term-in-row">
+        <span class="pr">bmb@Dev-bmbtech:~$</span>
+        <input id="term-in" autocomplete="off" spellcheck="false" placeholder="type 'help'…"/>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="badge-row"><span class="bl"></span>CYBERSECURITY PORTFOLIO<span class="bl"></span></div>
+      <h1>Bmb<br/><span>tech</span></h1>
+      <p class="sub">Cybersecurity Enthusiast · Privacy Advocate · Network Security Researcher</p>
+      <div class="univ"><i class="fa-solid fa-graduation-cap"></i>BSc Computer Science — Arusha University of Science and Technology</div>
+      <div class="tags">
+        <span class="tag">Penetration Testing</span><span class="tag">Network Analysis</span>
+        <span class="tag">Threat Intelligence</span><span class="tag">Privacy Tools</span>
+        <span class="tag">CTF</span><span class="tag">Python</span><span class="tag">Linux</span>
+      </div>
+      <div class="btns">
+        <a href="#projects" class="btn-g">VIEW PROJECTS</a>
+        <a href="https://github.com/novaxmd" target="_blank" class="btn-o"><i class="fa-brands fa-github"></i> GITHUB</a>
+        <button class="btn-o" id="resume-btn"><i class="fa-solid fa-file-pdf"></i> RESUME</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="profile">
+  <div class="p-card rv">
+    <div class="av-wrap">
+      <div class="av-ring"></div>
+      <img class="av" src="https://avatars.githubusercontent.com/novaxmd" alt="Bmb Tech"/>
+      <div class="av-online"></div>
+    </div>
+    <div class="p-info">
+      <h2>Bmb Tech</h2>
+      <div class="p-handle"><i class="fa-brands fa-github"></i> @novaxmd</div>
+      <div class="p-univ"><i class="fa-solid fa-school"></i> Arusha University of Science and Technology · BSc Computer Science</div>
+      <p class="p-bio">Passionate CS student specialising in cybersecurity, network security and privacy engineering. Building open-source security tools and privacy resources.</p>
+      <div class="p-stats">
+        <div class="ps"><span class="n">7</span><span class="l">Projects</span></div>
+        <div class="ps"><span class="n">6</span><span class="l">Certs</span></div>
+        <div class="ps"><span class="n">5+</span><span class="l">Languages</span></div>
+        <div class="ps"><span class="n">TZ</span><span class="l">Location</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><div class="dl"></div><span class="di">// PROJECTS //</span><div class="dl"></div></div>
+
+<section id="projects">
+  <div class="sh rv">
+    <div class="st">Live Projects</div>
+    <h2 class="stitle">Project Repository</h2>
+    <p class="ssub">Deployed applications — web platforms, downloaders, AI tools & utilities</p>
+  </div>
+  <div class="proj-grid" id="proj-grid"></div>
+</section>
+
+<div class="divider"><div class="dl"></div><span class="di">// SKILLS //</span><div class="dl"></div></div>
+
+<section id="skills">
+  <div class="sh rv">
+    <div class="st">Technical Arsenal</div>
+    <h2 class="stitle">Skills &amp; Technologies</h2>
+    <p class="ssub">Core cybersecurity tools, programming languages and security domains</p>
+  </div>
+  <div class="sk-layout">
+    <div class="radar-box rv">
+      <div class="radar-lbl"><i class="fa-solid fa-chart-simple"></i> DOMAIN PROFICIENCY RADAR</div>
+      <canvas id="radar" width="300" height="300"></canvas>
+    </div>
+    <div class="sk-cats">
+      <div class="sk-cat rv">
+        <div class="sk-ch"><i class="fa-solid fa-shield-halved" style="color:var(--red)"></i> Security Tools</div>
+        <div class="sk-list" id="sk-tools"></div>
+      </div>
+      <div class="sk-cat rv">
+        <div class="sk-ch"><i class="fa-solid fa-code" style="color:var(--cyan)"></i> Programming Languages</div>
+        <div class="sk-list" id="sk-langs"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><div class="dl"></div><span class="di">// CERTIFICATIONS //</span><div class="dl"></div></div>
+
+<section id="certs">
+  <div class="sh rv">
+    <div class="st">Credentials</div>
+    <h2 class="stitle">Certifications</h2>
+    <p class="ssub">Professional cybersecurity certifications and training programs</p>
+  </div>
+  <div class="certs-grid">
+    <div class="cert-card rv">
+      <div class="c-hd"><div class="c-logo"><img src="https://cdn.simpleicons.org/google/4285F4" onerror="this.parentElement.innerHTML='&lt;i class=\'fa-brands fa-google\' style=\'color:#4285F4;font-size:1.1rem\'&gt;&lt;/i&gt;'"/></div><div><div class="c-org">Google / Coursera</div></div></div>
+      <div class="c-name">Google Cybersecurity Professional Certificate</div>
+      <div class="c-date"><i class="fa-regular fa-calendar"></i> 2024</div>
+      <div class="c-ft"><span class="cst ca"><i class="fa-solid fa-circle-check"></i> COMPLETED</span><a href="https://coursera.org" target="_blank" class="cv">VERIFY →</a></div>
+    </div>
+    <div class="cert-card rv">
+      <div class="c-hd"><div class="c-logo"><img src="https://cdn.simpleicons.org/cisco/1BA0D7" onerror="this.parentElement.innerHTML='&lt;i class=\'fa-solid fa-network-wired\' style=\'color:#1BA0D7;font-size:1.1rem\'&gt;&lt;/i&gt;'"/></div><div><div class="c-org">Cisco</div></div></div>
+      <div class="c-name">Cisco CyberOps Associate (CBROPS)</div>
+      <div class="c-date"><i class="fa-regular fa-calendar"></i> 2024</div>
+      <div class="c-ft"><span class="cst ca"><i class="fa-solid fa-circle-check"></i> COMPLETED</span><a href="https://cisco.com" target="_blank" class="cv">VERIFY →</a></div>
+    </div>
+    <div class="cert-card rv">
+      <div class="c-hd"><div class="c-logo" style="background:rgba(200,32,47,.08);border-color:rgba(200,32,47,.22)"><i class="fa-solid fa-shield-halved" style="color:#c8202f;font-size:1.2rem"></i></div><div><div class="c-org">CompTIA</div></div></div>
+      <div class="c-name">CompTIA Security+ (SY0-701)</div>
+      <div class="c-date"><i class="fa-regular fa-calendar"></i> In Progress</div>
+      <div class="c-ft"><span class="cst ci"><i class="fa-solid fa-spinner fa-spin"></i> IN PROGRESS</span><a href="https://comptia.org" target="_blank" class="cv">INFO →</a></div>
+    </div>
+    <div class="cert-card rv">
+      <div class="c-hd"><div class="c-logo" style="background:#111;border-color:#333"><i class="fa-solid fa-terminal" style="color:#c11;font-size:1.1rem"></i></div><div><div class="c-org">Bmb Channel</div></div></div>
+      <div class="c-name">Pre-Security &amp; SOC Level 1 Path</div>
+      <div class="c-date"><i class="fa-regular fa-calendar"></i> 2023</div>
+      <div class="c-ft"><span class="cst ca"><i class="fa-solid fa-circle-check"></i> COMPLETED</span><a href="https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z" target="_blank" class="cv">VERIFY →</a></div>
+    </div>
+    <div class="cert-card rv">
+      <div class="c-hd"><div class="c-logo" style="background:rgba(0,100,200,.09);border-color:rgba(0,100,200,.22)"><i class="fa-solid fa-award" style="color:#0064c8;font-size:1.2rem"></i></div><div><div class="c-org">ISC²</div></div></div>
+      <div class="c-name">ISC² Certified in Cybersecurity (CC)</div>
+      <div class="c-date"><i class="fa-regular fa-calendar"></i> 2024</div>
+      <div class="c-ft"><span class="cst ca"><i class="fa-solid fa-circle-check"></i> COMPLETED</span><a href="https://isc2.org" target="_blank" class="cv">VERIFY →</a></div>
+    </div>
+    <div class="cert-card rv">
+      <div class="c-hd"><div class="c-logo" style="background:rgba(255,140,0,.09);border-color:rgba(255,140,0,.22)"><i class="fa-solid fa-user-secret" style="color:#ff8c00;font-size:1.2rem"></i></div><div><div class="c-org">EC-Council</div></div></div>
+      <div class="c-name">Ethical Hacking Essentials (EHE)</div>
+      <div class="c-date"><i class="fa-regular fa-calendar"></i> 2023</div>
+      <div class="c-ft"><span class="cst ca"><i class="fa-solid fa-circle-check"></i> COMPLETED</span><a href="https://eccouncil.org" target="_blank" class="cv">VERIFY →</a></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><div class="dl"></div><span class="di">// STATS //</span><div class="dl"></div></div>
+
+<section id="stats">
+  <div class="sh rv">
+    <div class="st">Analytics</div>
+    <h2 class="stitle">Portfolio Statistics</h2>
+    <p class="ssub">Project activity and contribution metrics</p>
+  </div>
+  <div class="stat-grid rv">
+    <div class="sbox"><span class="snum">7</span><span class="slbl">Live Projects</span></div>
+    <div class="sbox"><span class="snum">6</span><span class="slbl">Certifications</span></div>
+    <div class="sbox"><span class="snum">5+</span><span class="slbl">Languages</span></div>
+    <div class="sbox"><span class="snum">24/7</span><span class="slbl">Uptime</span></div>
+  </div>
+</section>
+
+<section id="network">
+  <div class="sh rv">
+    <div class="st">Visualization</div>
+    <h2 class="stitle">Interactive Network Map</h2>
+    <p class="ssub">Live node &amp; packet flow simulation</p>
+  </div>
+  <div class="cvs-box rv" style="background:#020810"><canvas id="net-cvs"></canvas></div>
+</section>
+
+<section id="globe">
+  <div class="sh rv">
+    <div class="st">Threat Intelligence</div>
+    <h2 class="stitle">Global Cyber Attack Map</h2>
+    <p class="ssub">Simulated real-time attack vectors</p>
+  </div>
+  <div class="cvs-box rv" style="background:#010608"><canvas id="globe-cvs"></canvas></div>
+</section>
+
+<div class="divider"><div class="dl"></div><span class="di">// SECURITY LAB //</span><div class="dl"></div></div>
+
+<section id="demo">
+  <div class="sh rv">
+    <div class="st">Security Lab</div>
+    <h2 class="stitle">Live Packet Sniffer</h2>
+    <p class="ssub">Real-time simulated network traffic capture</p>
+  </div>
+  <div class="demo-box rv">
+    <div class="demo-bar">
+      <div class="td td1"></div><div class="td td2"></div><div class="td td3"></div>
+      <span class="demo-ttl"><i class="fa-solid fa-wifi"></i> packet_sniffer.py — CAPTURE MODE</span>
+    </div>
+    <div class="demo-ctrls">
+      <button class="cb cs" id="cap-start"><i class="fa-solid fa-play"></i> START</button>
+      <button class="cb cx" id="cap-stop"><i class="fa-solid fa-stop"></i> STOP</button>
+      <button class="cb cc" id="cap-clear"><i class="fa-solid fa-trash"></i> CLEAR</button>
+      <span style="font-family:'Share Tech Mono',monospace;font-size:.68rem;color:var(--t3);margin-left:auto" id="cap-st"><i class="fa-solid fa-circle"></i> IDLE</span>
+    </div>
+    <div class="pkt-wrap">
+      <table><thead><tr><th>Time</th><th>Source IP</th><th>Destination</th><th>Protocol</th><th>Len</th><th>Info</th></tr></thead>
+      <tbody id="pkt-body"></tbody></table>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><div class="dl"></div><span class="di">// BLOG //</span><div class="dl"></div></div>
+
+<section id="blog">
+  <div class="sh rv">
+    <div class="st">Knowledge Base</div>
+    <h2 class="stitle">CTF &amp; Security Writeups</h2>
+    <p class="ssub">Technical deep-dives and CTF walkthroughs</p>
+  </div>
+  <div class="blog-ctrls rv">
+    <input class="bs2" id="blog-s" placeholder="Search articles…"/>
+    <div class="fg">
+      <button class="fb on" data-bt="all">ALL</button>
+      <button class="fb" data-bt="Network">NETWORK</button>
+      <button class="fb" data-bt="CTF">CTF</button>
+      <button class="fb" data-bt="Privacy">PRIVACY</button>
+      <button class="fb" data-bt="Threat">THREATS</button>
+      <button class="fb" data-bt="OSINT">OSINT</button>
+    </div>
+  </div>
+  <div class="blog-grid" id="blog-grid"></div>
+</section>
+
+<div class="divider"><div class="dl"></div><span class="di">// CONTACT //</span><div class="dl"></div></div>
+
+<section id="contact">
+  <div class="sh rv">
+    <div class="st">Connect</div>
+    <h2 class="stitle">Get In Touch</h2>
+    <p class="ssub">Open to cybersecurity roles and collaborations</p>
+  </div>
+  <div class="contact-grid">
+    <div class="clinks">
+      <a href="https://github.com/Bd-Mutant7" target="_blank" class="clink"><div class="cli"><i class="fa-brands fa-github"></i></div><div class="clt"><strong>GitHub</strong><small>github.com/Bd-Mutant7</small></div><span class="cla"><i class="fa-solid fa-arrow-right"></i></span></a>
+      <a href="mailto:spicezke@gmail.com" class="clink"><div class="cli"><i class="fa-solid fa-envelope"></i></div><div class="clt"><strong>Email</strong><small>Send Email</small></div><span class="cla"><i class="fa-solid fa-arrow-right"></i></span></a>
+      <a href="https://linkedin.com" target="_blank" class="clink"><div class="cli"><i class="fa-brands fa-linkedin-in"></i></div><div class="clt"><strong>LinkedIn</strong><small>Connect professionally</small></div><span class="cla"><i class="fa-solid fa-arrow-right"></i></span></a>
+      <a href="https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z" target="_blank" class="clink"><div class="cli"><i class="fa-solid fa-crosshairs"></i></div><div class="clt"><strong>Bmb Channel</strong><small>Cybersecurity challenges</small></div><span class="cla"><i class="fa-solid fa-arrow-right"></i></span></a>
+    </div>
+    <form class="cform" id="contact-form">
+      <div class="fg2"><label class="fl">// NAME</label><input class="fi" type="text" placeholder="Your name" required/></div>
+      <div class="fg2"><label class="fl">// EMAIL</label><input class="fi" type="email" placeholder="your@email.com" required/></div>
+      <div class="fg2"><label class="fl">// MESSAGE</label><textarea class="ft" rows="4" placeholder="Your message…" required></textarea></div>
+      <button type="submit" class="btn-g">SEND MESSAGE <i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="fb2">BMB<span style="color:var(--green)">.</span>TECH</div>
+  <div class="fc">© 2025 Bmb Tech · Arusha University of Science and Technology</div>
+  <div class="fl2">
+    <a href="https://github.com/novaxmd" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+    <a href="#hero"><i class="fa-solid fa-arrow-up"></i> Top</a>
+  </div>
+</footer>
+
+<div id="ai-bubble">
+  <div id="ai-panel">
+    <div class="ai-hd">
+      <div class="ai-av"><i class="fa-solid fa-robot"></i></div>
+      <div class="ai-inf"><strong>Bmb-AI</strong><small>● Portfolio Assistant</small></div>
+      <button class="ai-x" id="ai-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="ai-msgs" id="ai-msgs">
+      <div class="msg ma"><div class="mav"><i class="fa-solid fa-robot" style="font-size:.6rem;color:#020408"></i></div><div class="mb">Hi! I'm Bmb's AI assistant. Ask about projects, skills, certs, or studies.</div></div>
+    </div>
+    <div class="ai-quick" id="ai-quick">
+      <button class="aq" data-q="Who is Bmb Tech?">Who is Bmb?</button>
+      <button class="aq" data-q="What projects has Bmb built?">Projects</button>
+      <button class="aq" data-q="What cybersecurity tools does Bmb use?">Skills</button>
+      <button class="aq" data-q="How can I contact Bmbtech?">Contact</button>
+    </div>
+    <div class="ai-in-row">
+      <input class="ai-in" id="ai-in" placeholder="Ask anything…"/>
+      <button class="ai-send" id="ai-send"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+  </div>
+  <button id="ai-btn" title="AI Portfolio Assistant">
+    <div class="ai-notif"></div>
+    <i class="fa-solid fa-robot"></i>
+  </button>
+</div>
+
+<div id="rmod">
+  <div class="rbox">
+    <h3><i class="fa-solid fa-file-pdf" style="color:var(--red)"></i> Resume Preview</h3>
+    <pre class="rprev" id="rprev"></pre>
+    <div class="ra">
+      <button class="rdl" id="r-dl"><i class="fa-solid fa-download"></i> DOWNLOAD PDF</button>
+      <button class="rcl" id="r-cl">CLOSE</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
