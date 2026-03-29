@@ -8,6 +8,6 @@
     "noEmit": false,
     "lib": ["ES2020", "DOM", "DOM.Iterable"]
   },
-  "include": ["app.ts"],
+  "include": ["app.js"],
   "exclude": []
 }
